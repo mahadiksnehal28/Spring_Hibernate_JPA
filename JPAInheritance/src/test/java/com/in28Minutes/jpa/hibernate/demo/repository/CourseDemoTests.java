@@ -1,0 +1,55 @@
+package com.in28Minutes.jpa.hibernate.demo.repository;
+
+import javax.persistence.EntityManager;
+
+import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.in28Minutes.jpa.hibernate.demo.DemoApplication;
+
+
+@SpringBootTest(classes=DemoApplication.class)
+class CourseDemoTests {
+
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	
+
+	@Autowired
+	EntityManager em;
+	
+//	
+//	@Test
+//	void findById_Test() {
+//		System.err.println("Test");
+//		Course course = courseRepo.findById(10001L);
+//		assertEquals("jpa in 50 steps",course.getName() );
+//	}
+//
+//
+//	@Test
+//	@DirtiesContext
+//	void DeleteById_Test() {
+//		
+//		System.err.println("Test");
+//		courseRepo.DeleteById(10001L);
+//		assertNull(courseRepo.findById(10001L));
+//	}
+//
+//	@Test
+//	@DirtiesContext
+//	void save_Test() {
+//		
+//		Course course = courseRepo.findById(10001L);
+//		course.setName("Node js");
+//		courseRepo.save(course);
+//		assertEquals("Node js",courseRepo.findById(10001L).getName() );
+//	}
+//	
+
+	
+	
+}
